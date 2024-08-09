@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --Soft_blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very_dark_blue_main_BG: hsl(217, 54%, 11%);
+    --Very_dark_blue_card_BG: hsl(216, 50%, 16%);
+    --Very_dark_blue_line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body{
+    background-color: var(--Very_dark_blue_main_BG);
+}
+.container{
+    width: 300px;
+    margin: 30px auto;
+    background-color: var(--Very_dark_blue_card_BG);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .container p {
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Outfit', sans-serif;
+    color: var(--Soft_blue);
+    margin: 15px 0px;
+  }
+
+  .container .heading {
+    font-weight: 600;
+    color: var(--White);
+  }
+
+  .container .heading:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+  }
+
+  .section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .left-icon, .right-icon {
+    display: flex;
+    align-items: center;
+  }
+  
+  .left-icon img, .right-icon img {
+    margin-right: 10px;
+    width: 15px;
+  }
+
+  .left-icon p{
+    color: var(--Cyan);
+  }
+
+  .right-icon p{
+    color: var(--Soft_blue);
+  }
+  
+  .container hr{
+    display: block;
+    border: 1px solid var(--Very_dark_blue_line);
+    width: 100%;
+    margin: 18px 0px;
+  }
+
+  .profile{
+    display: flex;
+    align-items: center;
+  }
+
+  .profile img{
+    width: 40px;
+    border: 1px solid var(--White);
+    border-radius: 100%;
+    margin-right: 15px;
+  }
+
+  p span{
+    font-weight: 400;
+    color: var(--White);
+  }
+
+  p span:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+  }
+  
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
